@@ -5,9 +5,9 @@ import { TextStyles } from '../styles/TextInputStyle';
 import CustomTextInput from './common/CustomTextInput';
 import { AppConstant } from '../constant/AppConstant';
 
-const CustomSearchBar = ({placeholder,onChangeText}) => {
+const CustomSearchBar = ({placeholder,onChangeText,searchStyle}) => {
     return (
-        <View style={[TextStyles.textInputContainer]}>
+        <View style={[TextStyles.textInputContainer,searchStyle]}>
             <View style={[TextStyles.serchStyle]}>
                 <Icon name={AppConstant.search} size={20} color="#262626" />
                 <View style={[TextStyles.textInputStyle]}>

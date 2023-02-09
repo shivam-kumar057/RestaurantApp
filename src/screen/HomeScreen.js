@@ -1,17 +1,13 @@
 import React from 'react'
 import {StyleSheet ,View ,Text, SafeAreaView} from 'react-native'
-import CustomButton from '../component/common/CustomButton'
 import CustomHeader from '../component/common/CustomHeader'
-import CustomTextInput from '../component/common/CustomTextInput'
-import CustomSearchBar from '../component/CustomSearchBar'
+import HomeHeaderComponent from '../component/homeComponent/HomeHeaderComponent'
 
 const HomeScreen = () =>{
     return (
         <SafeAreaView style={{flex:1,backgroundColor:'white'}}>
-            {/* <CustomButton /> */}
-            {/* <CustomTextInput/> */}
-            {/* <CustomSearchBar/> */}
-            <CustomHeader menus headerText={'order Now'}/>
+            <CustomHeader textInputStyle={{borderRadius:0}} menus headerText={'order Now'} />
+            <HomeHeaderComponent/>
         </SafeAreaView>
     )
 }
