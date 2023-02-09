@@ -9,12 +9,12 @@ const windowHeight = Dimensions.get('window').height;
 
 const CustomHeader = ({ menus, headerText, onPressMenu, onPressCart ,textInputStyle , headerTextStyle}) => {
     return (
-        <View style={[TextStyles.textInputContainer, textInputStyle ,{ width: windowWidth,shadowOpacity:0.2 }]} >
-            <Ionicons onPress={onPressMenu} name={menus ? AppConstant.menu : AppConstant.arrow_back} size={20} color="#262626" />
+            <View style={[TextStyles.textInputContainer, textInputStyle ,{ width: windowWidth ,}]} >
+            <Ionicons onPress={onPressMenu} name={menus ? AppConstant.menu : AppConstant.arrow_back} size={25} color="#262626" />
             <View style={[TextStyles.headerTitleStyle]}>
                 <Text style={[TextStyles.headerStyle, headerTextStyle]}>{headerText}</Text>
             </View>
-            <Entypo onPress={onPressCart} name={'shopping-cart'} size={20} color="#262626" />
+            <Entypo onPress={onPressCart} name={'shopping-cart'} size={25} color="#262626" />
         </View>
     )
 }

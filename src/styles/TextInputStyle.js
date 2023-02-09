@@ -5,25 +5,29 @@ const windowHeight = Dimensions.get('window').height;
 export const TextStyles = StyleSheet.create({
     textInputContainer :{
         height:50,
-        width: '80%',
         backgroundColor:'white',
-        borderRadius:10,
+        borderRadius:5,
         justifyContent:'space-around',
         flexDirection:'row',
         alignItems:'center',
+        shadowOffset: {width: 5, height: 5},  
+        shadowColor: '#171717',  
+        shadowOpacity: 0.1,  
+        shadowRadius: 10,  
     },
     buttonText :{
         fontSize:20
     },
     textInputStyle :{
         height:40,
-        width:'80%',
+       width:'90%',
+       left:5
     },
     serchStyle :{
         flexDirection:'row',
-        width:'83%',
+        width:'75%',
         alignItems:'center',
-        justifyContent:'space-evenly'
+        justifyContent:'space-around',
     },
     microPhoneStyle:{
         height:40,
