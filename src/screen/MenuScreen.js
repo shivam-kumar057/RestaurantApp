@@ -2,11 +2,11 @@ import React from "react";
 import { SafeAreaView , Text } from "react-native";
 
 
-const ProductListingpage = () =>{
+const MenuScreen = () =>{
     return (
         <SafeAreaView style={{flex:1,backgroundColor:'blue'}}>
-             <Text>Product listing page</Text>
+             <Text>Menu Screen</Text>
         </SafeAreaView>
     )
 }
-export default ProductListingpage
+export default MenuScreen

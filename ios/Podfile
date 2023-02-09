@@ -9,6 +9,7 @@ target 'RestaurantApp' do
   use_react_native!(:path => config["reactNativePath"])
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  # pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
 
   target 'RestaurantAppTests' do
     inherit! :complete
