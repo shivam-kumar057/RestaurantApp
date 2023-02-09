@@ -7,7 +7,7 @@ import CustomSearchBar from '../component/CustomSearchBar'
 
 const HomeScreen = () =>{
     return (
-        <SafeAreaView style={{flex:1,backgroundColor:'white',justifyContent:'center'}}>
+        <SafeAreaView style={{flex:1,backgroundColor:'white'}}>
             {/* <CustomButton /> */}
             {/* <CustomTextInput/> */}
             {/* <CustomSearchBar/> */}
