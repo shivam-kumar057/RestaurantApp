@@ -5,17 +5,17 @@ import CustomSearchComponent from '../CustomSearchBar'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { AppConstant } from "../../constant/AppConstant";
 
-const HomeHeaderComponent = () => {
+const HomeHeaderComponent = ({userName,placeholder}) => {
     return (
         <View style={[HomeStyles.headerContainer]}>
             <>
-            <Text style={[HomeStyles.nameStyle]}>Hello Shivam,</Text>
+            <Text style={[HomeStyles.nameStyle]}>{userName}</Text>
             <Text style={[HomeStyles.headingStyle]}>what would you like to <Text style={{color:'#FC4C02'}}>eat ?</Text></Text>
             </>
             <View style={[HomeStyles.homeSearchStyle]}>
                 <CustomSearchComponent
                     searchStyle={HomeStyles.search}
-                    placeholder={'Enter a dish name eg : food'}
+                    placeholder={placeholder}
                 />
                  <View style={[HomeStyles.homeFilterStyle]}>
                  <Icon name={AppConstant.indent} size={23} color="white" />
